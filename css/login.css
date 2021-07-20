@@ -1,0 +1,88 @@
+.login {
+    height: 100%;
+    /* Display flex, usado para trabalhar com css grid */
+    display: flex; 
+    /* Informar que quero as divs uma do lado da outra */
+    flex-direction: row;
+}
+
+.login-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.banner-login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.banner-login h2 {
+    position: relative;
+    bottom: 40px;
+}
+
+
+.login-form-wrapper {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login-form-wrapper button{
+    width: 100%;
+}
+/* Efeito que aumenta o tamnaho do botão com o maouse em cima dele */
+.login-form-wrapper button:hover{
+    transform: scale(1.08);
+    transition: .02s;
+}
+
+.login-title {
+    /* Colocar os elementos um abaixo do outro */
+    display: flex;
+    flex-direction: row;
+    /* Como essa tag pertence a '.login-form-wrapper' ela está configurada para trabalhar a direção como coluna,
+    logo será centralizado os elementos no meio da linha e o justify-content separa o máximo o posível eles. */
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Ajustando a Responsabilidade do site */
+
+/* Quando a página for menor 1078px ela vai diminuir o tamanho a imagem */
+@media screen and (max-width:1078px){
+    .baner-login{
+        width:50%;
+        padding: 0 2%;
+    }
+    .banner-login img {
+        max-width: 400px;
+        
+    }
+    
+}
+
+/* E quando for menor que 769px ela vai sumir com banner(logo) da página */
+@media screen and (max-width:769px){
+    .banner-login{
+        display: none;
+    }
+    .login-form{
+        width:100%;
+    }
+}
+

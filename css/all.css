@@ -1,0 +1,5 @@
+/* Carrega a font primeiro para depois carregar os outors elementos */
+@import 'fonts.css';
+@import 'reset.css';
+@import 'login.css';
+@import 'register.css';
