@@ -1,0 +1,27 @@
+.flex-dashboard header{
+    display: flex;
+    /* Direcionamnto do alinhamento */
+    flex-direction: row;
+    /* Centralização dos items */
+    align-items: center;
+    /* Separar os elementos o máximo possível */
+    justify-content: space-between;
+    height: 90px;
+    background-color: white;
+    padding: 0 30px;
+    /* Destacando a borda */
+    border: 1px solid rgba(0,0,0,.0625);
+    border-right: 0px; 
+}
+
+/* link do cabeçalho   */
+.flex-dashboard header a{
+    /* Mudando a cor do link */
+    text-decoration:none;
+    color: #72777a;
+}
+
+/* Estilo dos icones: Não posso pegar a tag i, pois o javascript do fontawesome transforma em svg */
+.flex-dashboard header a > svg{
+    color: blue;
+}
